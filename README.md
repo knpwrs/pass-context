@@ -22,7 +22,7 @@ The library function is the default export of the package.
 ### CDN (UMD)
 
 ```
-http://unpkg.com/pass-context@1.0.0/dist/pass-context.min.js
+https://unpkg.com/pass-context@1.0.0/dist/pass-context.min.js
 ```
 
 The library function is exported as `passContext`.
