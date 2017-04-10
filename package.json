@@ -1,6 +1,6 @@
 {
   "name": "pass-context",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Higher-order function to create a function which receives its context as its first argument.",
   "main": "dist/pass-context.js",
   "scripts": {
