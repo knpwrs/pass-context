@@ -1,0 +1,52 @@
+{
+  "name": "pass-context",
+  "version": "0.0.0",
+  "description": "Higher-order function to create a function which receives its context as its first argument.",
+  "main": "dist/pass-context.js",
+  "scripts": {
+    "build": "npm-run-all clean build:*",
+    "build:dir": "mkdirp dist",
+    "build:min": "cross-env BABEL_ENV=production babel src/pass-context.js -o dist/pass-context.min.js --no-comments",
+    "build:umd": "babel src/pass-context.js -o dist/pass-context.js",
+    "clean": "rimraf dist",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "posttest": "eslint src",
+    "prepublish": "npm run build"
+  },
+  "ava": {
+    "babel": "inherit",
+    "require": "babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knpwrs/pass-context.git"
+  },
+  "keywords": [
+    "higher",
+    "order",
+    "function",
+    "context"
+  ],
+  "author": "Kenneth Powers <ken@kenpowers.net> (http://knpw.rs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knpwrs/pass-context/issues"
+  },
+  "homepage": "https://github.com/knpwrs/pass-context#readme",
+  "devDependencies": {
+    "ava": "^0.19.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-babili": "0.0.12",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1"
+  }
+}
