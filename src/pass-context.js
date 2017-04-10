@@ -1,1 +1,3 @@
-export default 'foo';
+export default fn => function trap(...args) {
+  return fn(this, ...args);
+};
