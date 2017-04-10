@@ -31,8 +31,8 @@ The library function is exported as `passContext`.
 
 ```js
 import pc from 'pass-context';
-const button = document.querySelector('.my-fancy-input');
-button.addEventListener('change', pc((ctx, event) => {
+const input = document.querySelector('.my-fancy-input');
+input.addEventListener('change', pc((ctx, event) => {
   // `ctx` is what is normally accessible with `this` as if a normal function were passed as the event listener.
   // `event` (and any additional arguments) are the normal arguments passed in-order after the context argument.
   // Since this is an arrow function, `this` is inherited.
