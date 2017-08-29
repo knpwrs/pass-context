@@ -1,5 +1,7 @@
 # pass-context
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/knpwrs/pass-context.svg)](https://greenkeeper.io/)
+
 > Higher-order function to create a function which receives its context as its
 > first argument.
 
